@@ -5,13 +5,13 @@
     "SEND_FEEDBACK": "https://kc-telecom-api-640a191745af.herokuapp.com/feedback/create"
   },
   "CRM": {
-    "NEW_PRICE": 59,
-    "OLD_PRICE": 120,
+    "NEW_PRICE": 12990,
+    "OLD_PRICE": 26000,
     "WEBMASTER_ID": 1,
     "DISCOUNT": "-51%",
     "TARGETOLOG_ID": 1,
     "ORDER_METHOD": "orders-from-tik-tok",
-    "ARTICLE": "superelastic-pants-blr",
-    "SHOP_SITE": "RB"
+    "ARTICLE": "superelastic-pants-kz",
+    "SHOP_SITE": "KZ"
   }
 }

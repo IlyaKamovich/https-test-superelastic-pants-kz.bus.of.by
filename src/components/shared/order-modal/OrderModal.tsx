@@ -107,13 +107,6 @@ const OrderModal = () => {
               externalId: foundOffer?.externalId,
             },
           },
-          {
-            initialPrice: 0,
-            quantity: 1,
-            offer: {
-              externalId: 'ortoped-stelki-blr',
-            },
-          },
         ],
       });
 
@@ -157,13 +150,13 @@ const OrderModal = () => {
           </div>
         </div>
         <div className="form">
-          <Input value={data.name} className="input" placeholder="Имя: Иван" onChange={onChangeName} />
+          <Input value={data.name} className="input" placeholder="Имя: Ильяс" onChange={onChangeName} />
           <InputMask
             className="input"
             value={data.phone}
-            mask="+375 99 999 99 99"
+            mask="+7 999 999 99 99"
             autoComplete="off"
-            placeholder="Телефон: +375 ХХ ХХХ ХХ ХХ"
+            placeholder="Телефон: +7 999 999 99 99"
             onChange={onChangePhone}
           />
           <button disabled={disableSend} type="button" className="send-button" onClick={sendData}>

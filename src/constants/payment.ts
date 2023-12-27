@@ -12,7 +12,7 @@ export const PAYMENT = [
   {
     icon: 'icons/delivery-black.svg',
     title: 'ДОСТАВКА',
-    text: '3. Мы отправим Вам заказ почтой или курьером',
+    text: '3. Быстрая доставка Казпочтой',
   },
   {
     icon: 'icons/payment-black.svg',
