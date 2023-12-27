@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
-import filter from 'lodash/filter';
 import { CONFIG } from '@/config';
 
 export type Value = string | number;
@@ -67,8 +66,7 @@ const dataSlice = createSlice({
 export const fetchOffers = createAsyncThunk('offer', async () => {
   const response = await fetch(`${CONFIG.REQUESTS.GET_OFFERS}/${CONFIG.CRM.ARTICLE}`);
   const data: IOffer[] = await response.json();
-  const filteredData = filter(data, (offer: IOffer) => offer.quantity >= 5);
-  return filteredData || [];
+  return data || [];
 });
 
 export const { changeColor, changeSize, setDefaultColor, setDefaultSize } = dataSlice.actions;

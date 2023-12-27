@@ -1,17 +1,18 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { FC } from 'react';
+import { SlideshowLightbox } from 'lightbox.js-react';
+
+import 'lightbox.js-react/dist/index.css';
 import './size-section.scss';
 
-const SIZES = ['images/size1.webp', 'images/size2.webp'];
-
-const SizeSection = () => {
+const SizeSection: FC = () => {
   return (
     <section id="size" className="size">
       <div className="container">
         <h2 className="size-title">как выбрать размер</h2>
         <div className="size-images">
-          {SIZES.map((src, index) => (
-            <LazyLoadImage effect="blur" src={src} key={index} alt="size" />
-          ))}
+          <SlideshowLightbox>
+            <img style={{ objectFit: 'contain' }} src={'images/size.png'} className="photo" alt="rate" />
+          </SlideshowLightbox>
         </div>
       </div>
     </section>
