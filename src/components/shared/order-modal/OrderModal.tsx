@@ -130,7 +130,7 @@ const OrderModal = () => {
   return (
     <>
       {contextHolder}
-      <Modal title="Быстросохнущие брюки" open={isOpen} onOk={onCloseModal} onCancel={onCloseModal} footer={null}>
+      <Modal title="Быстросохнущие эластичные брюки" open={isOpen} onOk={onCloseModal} onCancel={onCloseModal} footer={null}>
         <div className="modal-header">
           <div className="images">
             <img src={selectedImage} alt="shoes" />
